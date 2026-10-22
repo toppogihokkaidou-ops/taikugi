@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>たいくぎドットコム</title>
+</head>
+
+<body>
+    <h1>たいくぎドットコム</h1>
+    <p>パスワードを入力</p>
+    <input type="password" id="pw">
+    <button onclick="login()">ログイン</button>
+
+    <script>
+        function login() {
+            if (document.getElementById("pw").value === "好きなパスワード") {
+                location.href = "home.html";
+            } else {
+                alert("パスワードが違います");
+            }
+        }
+    </script>
+</body>
+
+</html>
